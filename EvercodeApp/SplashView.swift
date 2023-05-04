@@ -3,7 +3,7 @@ import SwiftUI
 struct SplashView: View {
     var body: some View {
         
-        VStack(spacing: 16) {
+        VStack {
             Image("EvercodeLogo")
                 .resizable()
                 .frame(width: 100, height: 100)
@@ -11,6 +11,7 @@ struct SplashView: View {
             Text("Welcome to Evercode!")
                 .font(.title)
                 .fontWeight(.semibold)
+                .padding(16)
             
             ProgressView()
         }
